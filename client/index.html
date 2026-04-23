@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>helloShim</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <canvas id="life-canvas" aria-label="Conway's Game of Life"></canvas>
+
+    <section class="control-panel" aria-label="Simulation controls">
+      <div class="button-row">
+        <button id="play-toggle" class="icon-button is-active" type="button" aria-label="Pause simulation"></button>
+        <button id="step-button" class="icon-button" type="button" aria-label="Step simulation"></button>
+        <button id="reset-button" class="icon-button" type="button" aria-label="Reset simulation"></button>
+      </div>
+
+      <label class="control">
+        <span>FPS</span>
+        <input id="fps-slider" type="range" min="5" max="60" value="18">
+        <output id="fps-output" for="fps-slider">18</output>
+      </label>
+
+      <label class="control">
+        <span>Cell</span>
+        <input id="cell-size-slider" type="range" min="6" max="28" value="12">
+        <output id="cell-size-output" for="cell-size-slider">12</output>
+      </label>
+    </section>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
