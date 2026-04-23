@@ -2,6 +2,8 @@
 
 Spawnet is a tiny Python project that demonstrates a single app hosting a single-page web app. The default client is a Conway's Game of Life scene served locally on `127.0.0.1:1337`, and the same entrypoint can also bundle the full `client/` directory into self-contained build artifacts.
 
+![Spawnet screencap](docs/screenCap.png)
+
 ## Quick Start
 
 Install `uv` first if you do not already have it:
